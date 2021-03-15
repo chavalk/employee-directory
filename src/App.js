@@ -1,9 +1,13 @@
 import React from "react";
 import Jumbotron from "./Components/Jumbotron";
+import Table from "./Components/Table";
 
 function App() {
   return (
-    <Jumbotron />
+    <div>
+      <Jumbotron />
+      <Table />
+    </div>
   );
 }
 
