@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import TableHeader from "../TableHeader/index";
+import TableBody from "../TableBody/index";
 
 class Table extends Component {
     state = {
@@ -17,16 +18,8 @@ class Table extends Component {
         return (
             <table className="table">
                 <TableHeader />
-                <tbody>
-                    {this.state.employees.map(result => (
-                        <tr>
-                            <td>{result.name.first}</td>
-                            <td>{result.name.last}</td>
-                            <td>{result.location.country}</td>
-                            <td>{result.dob.age}</td>
-                        </tr>
-                    ))}
-                </tbody>
+                <TableBody employees={this.state.employees}/>
+                
             </table>
         );
     }
