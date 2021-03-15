@@ -1,6 +1,16 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
 
 class Table extends Component {
+    state = {
+        employees: []
+    };
+
+    componentDidMount() {
+        API.getRandomEmployee()
+            .then(res => this.setState({ employees: res.data.results }))
+            .catch(err => console.log(err));
+    }
 
     render() {
         return (
