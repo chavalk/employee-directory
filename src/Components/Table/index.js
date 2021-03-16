@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import TableHeader from "../TableHeader/index";
 import TableBody from "../TableBody/index";
-import SortButton from "../SortButton/index";
+
 
 class Table extends Component {
     state = {
@@ -18,12 +18,12 @@ class Table extends Component {
     render() {
         return (
             <div>
-            <SortButton />
-            <table className="table">
-                <TableHeader />
-                <TableBody employees={this.state.employees}/>
-                
-            </table>
+                <button type="button" className="btn btn-dark ml-3 mb-4">Sort By First Name</button>
+                <table className="table">
+                    <TableHeader />
+                    <TableBody employees={this.state.employees} />
+
+                </table>
             </div>
         );
     }
