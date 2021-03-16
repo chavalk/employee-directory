@@ -5,9 +5,31 @@ import TableBody from "../TableBody/index";
 
 
 class Table extends Component {
-    state = {
-        employees: []
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            employees: []
+        };
+        this.compareBy.bind(this);
+        this.sortBy.bind(this);
+    }
+
+    compareBy() {
+        return function (a, b) {
+            const firstName = a.name.first;
+            const secondName = b.name.first;
+
+            if (firstName < secondName) return -1;
+            if (firstName > secondName) return 1;
+            return 0;
+        };
+    }
+
+    sortBy() {
+        let arrayCopy = [...this.state.employees];
+        arrayCopy.sort(this.compareBy());
+        this.setState({ employees: arrayCopy});
+    }
 
     componentDidMount() {
         API.getRandomEmployee()
@@ -18,7 +40,7 @@ class Table extends Component {
     render() {
         return (
             <div>
-                <button type="button" className="btn btn-dark ml-3 mb-4">Sort By First Name</button>
+                <button onClick={() => this.sortBy()} type="button" className="btn btn-dark ml-3 mb-4">Sort By First Name</button>
                 <table className="table">
                     <TableHeader />
                     <TableBody employees={this.state.employees} />
