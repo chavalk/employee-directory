@@ -8,10 +8,21 @@ class Table extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            employees: []
+            employees: [],
+            search: ""
         };
         this.compareBy.bind(this);
         this.sortBy.bind(this);
+        this.handleSearchChange.bind(this);
+    }
+
+    handleSearchChange = event => {
+        this.setState({ search: event.target.value });
+        this.setState({
+            employees: this.state.employees.filter(
+                emp => (emp.name.first.toLowerCase()).includes(this.state.search.toLowerCase())
+            )
+        });
     }
 
     compareBy() {
@@ -41,7 +52,15 @@ class Table extends Component {
         return (
             <div>
                 <button onClick={() => this.sortBy()} type="button" className="btn btn-dark mt-3 ml-3 mb-4">Sort By First Name</button>
-                <input type="search" class="form-control ml-3" placeholder="Search By Name" aria-label="Search" aria-describedby="basic-addon1"></input>
+                <input
+                    value={this.state.search}
+                    type="search"
+                    class="form-control ml-3"
+                    placeholder="Search By First Name"
+                    aria-label="Search"
+                    aria-describedby="basic-addon1"
+                    onChange={this.handleSearchChange}
+                />
                 <table className="table">
                     <TableHeader />
                     <TableBody employees={this.state.employees} />
