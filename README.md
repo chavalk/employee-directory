@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# employee-directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Employee Directory is a front-end application built with React.js. The interface of the application is fairly simple. It has a Bootstrap Jumbatron at the top showing the name of the application. It also contains a Bootstrap table at the bottom of the page. And right in the middle it has a button to sort the data in the table by the first name and an input box to search the table by first name. The data in the table is pulled from the random user API. The first name, last name, country, and age are the four pieces of information extracted from each item in the array of objects. The API call requests ten random users with each call. Below is a picture of the landing page for the application.
 
-In the project directory, you can run:
+![employee-directory](./public/assets/images/landing.png)
 
-### `npm start`
+Below is an image of the page after the data is sorted by first name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![employee-directory](./public/assets/images/sorted.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+And below is an image of the page after searching for a first name.
 
-### `npm test`
+![employee-directory](./public/assets/images/search.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Table of Contents
 
-### `npm run build`
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you'd like to install the application to have the codebase, simply fork the repository to your own GitHub. Once you clone the repository to your computer, run npm install on your terminal to install all the dependencies. To bring up the application run npm start on you terminal. Alternatively, you can see the application in action by clicking the link below.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://chavalk.github.io/employee-directory/
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application's primary purpose is to give exposure to develop a front-end application from scratch using React.js.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[MIT](https://choosealicense.com/licenses/mit/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions are currently not accepted for this application,
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+There is no testing available within the application.
 
-### Code Splitting
+## Questions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+My GitHub username is: chavalk
 
-### Analyzing the Bundle Size
+Link: https://github.com/chavalk
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have additional questions, feel free to reach me at chavalk@hotmail.com.
