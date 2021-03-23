@@ -39,7 +39,7 @@ The application's primary purpose is to give exposure to develop a front-end app
 
 ## Contributing
 
-Contributions are currently not accepted for this application,
+Contributions are currently not accepted for this application.
 
 ## Tests
 
