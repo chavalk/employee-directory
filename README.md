@@ -1,54 +1,45 @@
-# employee-directory
+# Employee Directory
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Employee Directory is a front-end application built with React.js. The interface of the application is fairly simple. It has a Bootstrap Jumbatron at the top showing the name of the application. It also contains a Bootstrap table at the bottom of the page. And right in the middle it has a button to sort the data in the table by the first name and an input box to search the table by first name. The data in the table is pulled from the random user API. The first name, last name, country, and age are the four pieces of information extracted from each item in the array of objects. The API call requests ten random users with each call. Below is a picture of the landing page for the application.
+An application that generates a list of employees pulled from the Random User API.
 
-![employee-directory](./public/assets/images/landing.png)
+## What the project does
 
-Below is an image of the page after the data is sorted by first name.
+The project generates a list of employees pulled from the Random User API. It also allows the list to be searched by first name and for the list to be sorted by first name. Below is a GIF of the application in action.
 
-![employee-directory](./public/assets/images/sorted.png)
+![password-generator](./assets/images/password-generator.gif)
 
-And below is an image of the page after searching for a first name.
+## Why is the project useful
 
-![employee-directory](./public/assets/images/search.png)
+The project is useful in demonstrating how to build a front end application using React and how to implement a feature to sort and to search the employee list.
 
-## Table of Contents
+## How can users get started with this project
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-## Installation
-
-If you'd like to install the application to have the codebase, simply fork the repository to your own GitHub. Once you clone the repository to your computer, run npm install on your terminal to install all the dependencies. To bring up the application run npm start on you terminal. Alternatively, you can see the application in action by clicking the link below.
+Simply navigate to the deployed version of the website by following the link below.
 
 https://chavalk.github.io/employee-directory/
 
-## Usage
+## What technologies were used with this project
 
-The application's primary purpose is to give exposure to develop a front-end application from scratch using React.js.
+* JavaScript
+* HTML
+* CSS
+* React
+* Random User API
+* Bootstrap
+* Axios
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Contributing
-
-Contributions are currently not accepted for this application.
-
-## Tests
-
-There is no testing available within the application.
-
-## Questions
+## Where can users get help with your project
 
 My GitHub username is: chavalk
 
 Link: https://github.com/chavalk
 
 If you have additional questions, feel free to reach me at chavalk@hotmail.com.
+
+## Who maintains and contributes to the project
+
+Currently I'm the only person maintaining and contributing to the project.
