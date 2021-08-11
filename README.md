@@ -10,7 +10,7 @@ An application that generates a list of employees pulled from the Random User AP
 
 The project generates a list of employees pulled from the Random User API. It also allows the list to be searched by first name and for the list to be sorted by first name. Below is a GIF of the application in action.
 
-![password-generator](./assets/images/password-generator.gif)
+![employee-directory](./public/assets/images/employee-directory.gif)
 
 ## Why is the project useful
 
